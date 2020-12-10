@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+小黑人水上設施影片
+{% endblock %}
+{% block titlemessage %}
+    <h1>各種水上設施運動</h1>
+{% endblock %}
+{% block content %}
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">清單名稱</th>
+      <th scope="col">建立日期</th>
+    </tr>
+  </thead>
+  <tbody>
+        {% for item in items %}
+        <tr>
+        <td>{{ item.id}}</td>
+        <td>
+            <a href="/list/{{ item.id }}/">{{ item.name }}</a>
+        </td>
+        <td>{{ item.pub_date}}</td>
+        </tr>
+      {% endfor %}
+  </tbody>
+</table>
+  本網頁被瀏覽了{{ hit_count }}次
+{% endblock %}
