@@ -1,8 +1,6 @@
   {% load static %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="{% static "小黑人.jpg" %}" width=80>
-  </a>
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-red bg-p-3 mb-2 bg-warning text-dark"width=500>
+    <img src="{% static "120.png" %}" width=80>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,26 +8,67 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">回首頁 <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/"><h1><span class="border border-dark">回首頁</span></h1> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/%E5%B0%8F%E9%BB%91%E4%BA%BA%E6%BD%9B%E6%B0%B4%E7%8D%A8%E6%9C%A8%E8%88%9F-108515527447931/">小黑人水上設施網站</a>
+        <a class="nav-link" href="https://zh.wikipedia.org/wiki/%E6%8D%B7%E9%81%8B">
+        <h2><span class="border border-dark">捷運維基百科</span><h2></a>
       </li>
-      <li class="nav-item dropdown">
+      <h2><li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          我的練習網頁
+        <span class="border border-dark">捷運介紹</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/lotto/">lucky大樂透</a>
-          <a class="dropdown-item" href="/admin">後台管理</a>
-          <a class="dropdown-item" href="/playlist/">小黑人水上設施影片</a>
-          <a class="dropdown-item" href="/mychart/">水上設施營業統計圖</a>
+          <a class="dropdown-item" href="/taipei/">台北捷運</a>
+          <a class="dropdown-item" href="/kao">高雄捷運</a>
+          <a class="dropdown-item" href="/newtaipei/">新北捷運</a>
+          <a class="dropdown-item" href="/tyu/">桃園機場捷運</a>
         </div>
-      </li>
+      </li></h2>
+      <h2><li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="border border-dark">捷運車型</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/taipeicar/">台北捷運</a>
+          <a class="dropdown-item" href="/kaocar">高雄捷運</a>
+          <a class="dropdown-item" href="/newtaipeicar/">新北捷運</a>
+          <a class="dropdown-item" href="/tyucar/">桃園機場捷運</a>
+        </div>
+      </li></h2>
+      <h2><li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="border border-dark">捷運統計圖</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/taipei/">台北捷運統計圖</a>
+          <a class="dropdown-item" href="/admin">高雄捷運統計圖</a>
+          <a class="dropdown-item" href="/playlist/">新北捷運統計圖</a>
+          <a class="dropdown-item" href="/mychart/">桃園機場捷運統計圖</a>
+        </div>
+      </li></h2>
+      <h2><li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="border border-dark">政府機構</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://www.epa.gov.tw/">環保署</a>
+          <a class="dropdown-item" href="https://www.mohw.gov.tw/mp-1.html">衛生署</a>
+          <a class="dropdown-item" href="https://www.swd.gov.hk/tc/index/">社會福利署</a>
+          <a class="dropdown-item" href="https://www.nca.gov.tw/">役政署</a>
+          <a class="dropdown-item" href="https://www.td.gov.hk/tc/home/index.html">運輸署</a>
+          <a class="dropdown-item" href="https://www.immigration.gov.tw/">移民署</a>
+          <a class="dropdown-item" href="https://www.motc.gov.tw/ch/index.jsp">交通署</a>
+          <a class="dropdown-item" href="https://www.npa.gov.tw/NPAGip/wSite/mp?mp=1">警政署</a>
+        </div>
+      </li></h2>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
+  </div>
 </nav>
+<br>
+<br>
